@@ -1,0 +1,186 @@
+body,
+.header,
+.navbar,
+.main-content,
+.welcome-section,
+.features-section,
+.career-suggestions-section,
+.job-search-section,
+.request-consultation-section,
+.footer,
+.primary-btn,
+#RegVideo,
+.join-now-btn {
+    font-family:'Arial', 'Anuphan', sans-serif;
+}
+.header {
+    background-color: #1d3557;
+    color: #f1faee;
+    padding: 20px;
+    text-align: center;
+}
+.logo-container {
+  border: #0077B6 2px solid;
+  background-color: #457b9d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  margin: auto;
+  max-width: 200px;
+  border-radius: 50%;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  box-shadow: 0 2px 5px;
+}
+
+.logo {
+  border: #0f354a 2px solid;
+  width: 100%;
+  max-width: 160px;
+  height: 160px;
+  display: block;
+  border-radius: 50%;
+  background: #f1faee;
+  padding: 1px;
+  transition: transform .7s, box-shadow 0.7s, border-color .7s;
+}
+
+/* .logo-container:hover, .logo-container:focus-within {
+  box-shadow: 0 6px 24px rgba(0,119,182,0.18);
+  border-color: #0096C7;
+} */
+
+.logo:hover, .logo:focus {
+  transform: scale(1.04) rotate(-2deg);
+  box-shadow: 0 4px 16px rgba(0,119,182,0.18);
+  border-color: #0096C7;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #457b9d;
+    padding: 10px;
+}
+.navbar a {
+    color: #f1faee;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+.navbar a:hover, .navbar a:focus-visible {
+    background-color: #a8dadc;
+    color: #1d3557;
+    transform: translateY(-2px) scale(1.05);
+}
+
+.join-now-btn {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  background: linear-gradient(to bottom, #0077B6, #0096C7);
+  color: #fff;
+  font-weight: 600;
+  font-size: .9rem;
+  padding: 0.8em 2em 0.8em 1.2em;
+  border: black 2px solid;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+  outline: none;
+  transition: 
+    transform 0.18s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.18s,
+    border 0.18s;
+  overflow: hidden;
+}
+
+.join-now-btn .join-now-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.join-now-btn:hover, .join-now-btn:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 150, 199, 0.25), 0 4px 12px rgba(0,0,0,0.15);
+  border: 2px solid #90e0ef;
+}
+
+.join-now-btn:active {
+  transform: scale(0.97);
+}
+.primary-btn,
+#RegVideo {
+  background: linear-gradient(to bottom, #0077B6, #0096C7);
+  color: #fff;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.6em 1.8em;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  cursor: pointer;
+  margin: 8px 6px 0 0;
+  transition:
+    transform 0.18s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.18s cubic-bezier(.4,2,.6,1),
+    border 0.18s cubic-bezier(.4,2,.6,1),
+    background 0.18s cubic-bezier(.4,2,.6,1);
+  outline: none;
+}
+
+.primary-btn:hover, .primary-btn:focus-visible,
+#RegVideo:hover, #RegVideo:focus-visible {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(0,150,199,0.18);
+  border: 2px solid #90e0ef;
+  background: linear-gradient(to bottom, #0096C7, #0077B6);
+}
+
+.primary-btn:active,
+#RegVideo:active {
+  transform: scale(0.97);
+}
+.main-content {
+    font-family: Anuphan, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1faee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.welcome-section {
+    text-align: center;
+    margin-bottom: 20px;
+    border: #1d3557 2px solid;
+}
+.features-section {
+    margin-bottom: 20px;
+    border: #1d3557 2px solid;
+}
+.career-suggestions-section {
+    margin-top: 20px;
+    border: #1d3557 2px solid;
+    
+}
+.job-search-section {
+    margin-top: 20px;
+    border: #1d3557 2px solid;
+}
+.request-consultation-section {
+    margin-top: 20px;
+    border: #1d3557 2px solid;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #457b9d;
+    color: #f1faee;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
