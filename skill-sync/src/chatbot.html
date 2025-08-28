@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Messenger</title>
+    <link rel="stylesheet" href="styles/chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo-img">
+                   
+                    <img src="public/images/icons/logo.png" alt="Career Pathway Advisor Logo">
+                </div>
+                <div class="logo-text">
+                    <div class="logo-line logo-line-1">CAREER</div>
+                    <div class="logo-line logo-line-2">PATHWAY</div>
+                    <div class="logo-line logo-line-3">ADVISOR</div>
+                </div>
+            </div>
+            <nav>
+                <a href="services.html">Services</a>
+                <a href="chatbot.html">Advisor</a>
+                <a href="about.html">About</a>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="get-started-btn">Get Started</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="features-nav">
+            <a href="#" class="feature-item">
+                <div class="feature-icon" style="background: rgba(52, 152, 219, 0.15); color: #3498db;">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="feature-name">Job Matching</div>
+                <div class="feature-desc">Find jobs that match your skills and experience</div>
+            </a>
+            <a href="#" class="feature-item">
+                <div class="feature-icon" style="background: rgba(46, 204, 113, 0.15); color: #2ecc71;">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="feature-name">Skills Analysis</div>
+                <div class="feature-desc">Identify your strengths and areas for improvement</div>
+            </a>
+            <a href="#" class="feature-item">
+                <div class="feature-icon" style="background: rgba(155, 89, 182, 0.15); color: #9b59b6;">
+                    <i class="fas fa-road"></i>
+                </div>
+                <div class="feature-name">Career Pathways</div>
+                <div class="feature-desc">Explore different career trajectories and opportunities</div>
+            </a>
+            <a href="#" class="feature-item">
+                <div class="feature-icon" style="background: rgba(241, 196, 15, 0.15); color: #f1c40f;">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="feature-name">Learning Resources</div>
+                <div class="feature-desc">Access courses and materials to enhance your skills</div>
+            </a>
+        </div>
+        
+        <div class="chatbot-container">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <div class="chat-icon"><i class="fas fa-robot"></i></div>
+                    <h2>Career Pathway Advisor</h2>
+                </div>
+                <div class="chat-controls">
+                    <button title="Minimize"><i class="fas fa-minus"></i></button>
+                    <button title="Settings"><i class="fas fa-cog"></i></button>
+                    <button title="Close"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    Hi there! I'm your career assistant. How can I help you today?
+                </div>
+                <div class="message bot-message">
+                    I can provide information about job matching, skills analysis, career pathways, and learning resources.
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message here...">
+                <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        
+        <div class="customization-panel">
+            <h3><i class="fas fa-sliders-h"></i> Customize Chatbot</h3>
+            <div class="customization-options">
+                <div class="option-group">
+                    <label for="bg-color">Background Color</label>
+                    <input type="color" id="bg-color" value="#6c63ff">
+                </div>
+                <div class="option-group">
+                    <label for="font-family">Font Family</label>
+                    <select id="font-family">
+                        <option value="Segoe UI, Tahoma, Geneva, Verdana, sans-serif">Default</option>
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="Georgia, serif">Georgia</option>
+                        <option value="'Courier New', monospace">Courier New</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="bot-name">Bot Name</label>
+                    <input type="text" id="bot-name" value="Career Assistant Bot">
+                </div>
+                <div class="option-group">
+                    <label for="animation-speed">Animation Speed</label>
+                    <select id="animation-speed">
+                        <option value="0.2">Fast</option>
+                        <option value="0.4" selected>Medium</option>
+                        <option value="0.6">Slow</option>
+                    </select>
+                </div>
+            </div>
+            <button class="reset-btn" id="reset-btn"><i class="fas fa-redo"></i> Reset to Default</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Career Pathway Advisor</h3>
+                    <p>AI-Powered Career Guidance</p>
+                    <p>Helping professionals find their ideal career paths since 2023.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="howitwork.html">How It Works</a>
+                    <a href="login.html">Login</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <a href="mailto:info@careerpathadvisor.com">info@careerpathadvisor.com</a>
+                    <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                    <p>123 Career Street, Skill City</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Career Pathway Advisor. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="src/methods/chatbot.js"></script>
+</body>
+</html>
